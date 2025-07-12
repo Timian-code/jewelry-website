@@ -275,3 +275,59 @@ nav a {
 .cta-button.secondary:hover {
     background-color: #545b62;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav {
+        text-align: center;
+    }
+    
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+    
+    /* Hero section */
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    /* Gallery and featured grids */
+    .gallery-grid,
+    .featured-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    /* Contact form */
+    .contact-container {
+        padding: 1rem;
+    }
+    
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    /* About page */
+    .about-container {
+        padding: 1rem;
+    }
+    
+    .about-container h1 {
+        font-size: 2rem;
+    }
+    
+    /* CTA buttons */
+    .cta-section .cta-button {
+        display: block;
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+}
