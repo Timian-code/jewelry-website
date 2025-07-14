@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "Elegant Silver Ring",
+      "description": "Beautiful handcrafted silver ring with intricate details",
+      "price": 45,
+      "category": "rings",
+      "image": "https://picsum.photos/300/250?random=1",
+      "materials": ["sterling silver", "cubic zirconia"],
+      "size": "7",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Golden Chain Necklace",
+      "description": "Delicate gold-plated chain perfect for everyday wear",
+      "price": 65,
+      "category": "necklaces",
+      "image": "https://picsum.photos/300/250?random=2",
+      "materials": ["gold-plated", "stainless steel"],
+      "length": "18 inches",
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "name": "Pearl Drop Earrings",
+      "description": "Classic pearl earrings with sterling silver hooks",
+      "price": 35,
+      "category": "earrings",
+      "image": "https://picsum.photos/300/250?random=3",
+      "materials": ["freshwater pearls", "sterling silver"],
+      "size": "medium",
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "name": "Rose Gold Bracelet",
+      "description": "Delicate rose gold bracelet with adjustable chain",
+      "price": 55,
+      "category": "bracelets",
+      "image": "https://picsum.photos/300/250?random=4",
+      "materials": ["rose gold plated", "stainless steel"],
+      "length": "adjustable",
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "name": "Vintage Sapphire Ring",
+      "description": "Stunning vintage-style ring with blue sapphire",
+      "price": 85,
+      "category": "rings",
+      "image": "https://picsum.photos/300/250?random=5",
+      "materials": ["sterling silver", "sapphire"],
+      "size": "6",
+      "inStock": false
+    }
+  ]
