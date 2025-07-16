@@ -1,14 +1,32 @@
+
+:root {
+    --primary-color: #8B7355;     /* Warm brown */
+    --secondary-color: #A0956B;   /* Sage green */
+    --accent-color: #D4C4A8;      /* Cream */
+    --text-dark: #3E3E3E;         /* Dark gray */
+    --text-light: #6B6B6B;        /* Medium gray */
+    --background: #FEFEFE;         /* Off-white */
+}
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: var(--text-dark);
+    background-color: var(--background);
     margin: 0;
     padding: 0;
 }
 
-nav {
-    background-color: #f4f4f4;
-    padding: 1rem;
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
 }
 
+nav {
+    background-color: var(--accent-color);
+    padding: 1rem;
+}
 nav a {
     margin-right: 1rem;
     text-decoration: none;
@@ -73,29 +91,31 @@ nav a {
 
 /* Homepage Styles */
 .hero {
-    background-color: #f8f9fa;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../images/example.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 4rem 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
+.hero h1,
 .hero p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .cta-button {
-    background-color: #2c5aa0;
+    background-color: var(--primary-color);
     color: white;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -103,10 +123,11 @@ nav a {
     font-size: 1.1rem;
     display: inline-block;
     transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cta-button:hover {
-    background-color: #1e3d6f;
+    background-color: var(--secondary-color);
 }
 
 .featured {
@@ -330,4 +351,50 @@ nav a {
         margin: 0.5rem 0;
         width: 100%;
     }
+}
+
+/* JSON Product Styles */
+.materials {
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.product-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.product-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.product-button.sold-out {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.product-button.sold-out:hover {
+    background-color: #999;
+}
+
+.jewelry-item h3 {
+    color: var(--text-dark);
+}
+
+.jewelry-item p {
+    color: var(--text-light);
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color) !important;
 }
